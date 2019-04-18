@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>White Edition | Contact</title>
+<title>Contact Us</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -35,15 +35,14 @@
   <div class="alert alert-success" id="alert" role="alert" style="display:none">
       Email sent!
     </div>
-    <form>
-        <div class="form-group">
-            <label for="inputEmail">Your Email Address</label>
-            <input id="inputEmail" name="email" type="email" class="form-control">
-        </div>
-
+    <form id="form">
       <div class="form-group">
-          <label for="inputIssue">Your Issue</label>
-          <textarea id="inputIssue" name="message" class="form-control"></textarea>
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" class="form-control" id="subject">
+      </div>
+      <div class="form-group">
+          <label for="body">Body</label>
+          <input type="text" name="body" class="form-control" id="body">
       </div>
 
       <button type="submit" class="btn btn-primary" onclick="showAlert()">Submit</button>
