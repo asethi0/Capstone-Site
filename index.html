@@ -283,6 +283,31 @@ Upon termination of this Agreement, you shall cease all use of the Application a
 
 <h4>MySQL Database Setup</h4>
 <ul>
+	<li>Download MySQL Community: https://dev.mysql.com/downloads/mysql/</li>
+	<li>During installation, select to start MySQL on startup.</li>
+	<li>Ensure that your root username is "root" and root password is "root".</li>
+	<li>Within the root user, create a database called "handmade".</li>
+	<li>Run the command: mysql -u root -p < [Most recent dump file]</li>
+</ul>
+
+
+<h4>Backend Setup</h4>
+
+<ul>
+	<li>Download our services repository: https://github.com/mtriau/CreamCrusaders-Services</li>
+	<li>in eclipse or intelliJ import the project as a gradle project</li>
+	<li>Select default gradle wrapper and auto import.</li>
+	<li>Wait for the dependencies to install.</li>
+	<li>In applications.properties make sure that the username and password for the mysql server matches what is on your local machine.</li>
+	<li>If you are running jdk version 1.9 or greater, in the gradle.build file uncomment or add the line "compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.4'"</li>
+	<li>In the gradle.build file make sure that the version matches your mysql version in this dependency "compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'"</li>
+	<li>With the MySql instance running run HandmadeApiApplication.java </li>
+	<li>Verify that it is working by running the app and attempting to login. If successeful the environment setup is complete.</li>
+
+
+</ul>
+
+<!-- <ul>
 	<p>
 		Download MySQL Community: https://dev.mysql.com/downloads/mysql/<br>
 During installation, select to start MySQL on startup. <br>
@@ -293,7 +318,7 @@ Within the services repository is a dumpfile, use this for the required database
 Check under services.msc that MySQL #.# is currently running (#.# for the installed version number)<br>
 If MySQL server is running under services, HandmadeApiApplication.java is running, and the tables are setup, the MySQL backend setup is complete. Run the app in android studio to begin testing.
 	</p>
-</ul>
+</ul> -->
 
 <h4>Build Environment</h4>
 <ul>
