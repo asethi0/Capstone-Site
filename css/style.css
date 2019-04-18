@@ -1,8 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-	margin:0;
-	padding:0
-}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display:block
 }
@@ -41,11 +37,9 @@ body {
 	font-size:13px;
 	line-height:22px;
 	color:#444444;
-	padding:0;
-}
-a, a:link {
-	color:#e00966;
-	text-decoration:none;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 5%;
 }
 a:hover {
 	color:#000;
@@ -74,10 +68,7 @@ img {
 	background:url("../images/arrow.gif") no-repeat right 50%;
 	padding-right:20px;
 }
-#main-content, footer {
-	margin:0 auto;
-	max-width:950px;
-}
+
 header {
 	margin-top:0;
 	width:100%;
@@ -117,34 +108,6 @@ header .main-nav li a:hover, header .main-nav li a.active {
 	font-size:40px;
 	color:#606060;
 	text-align:center;
-}
-div.columns {
-	height:1%;
-}
-div.one-half {
-	width:48.5%;
-}
-div.one-third {
-	width:31.3%;
-}
-div.two-third {
-	width:65.64%;
-}
-div.one-fourth {
-	width:22.7%;
-}
-div.three-fourth {
-	width:74.23%;
-}
-div.one-half, div.one-third, div.two-third, div.three-fourth, div.one-fourth {
-	position:relative;
-	margin-left:3%;
-	float:left;
-	margin-bottom:1.55em;
-}
-div.one-half:first-child, div.one-third:first-child, div.two-third:first-child, div.three-fourth:first-child, div.one-fourth:first-child, .first {
-	margin-left:0 !important;
-	clear:left;
 }
 div.img-first {
 	float:left;
@@ -238,7 +201,6 @@ footer .copyright a:hover {
 	font-size:14px;
 	resize:none;
 	color:#4f4f4f;
-	float:left;
 	margin-top:0;
 	width:400px;
 	height:115px;
@@ -283,36 +245,15 @@ footer .copyright a:hover {
 	background-color:#e187ae;
 	color:#FFF;
 }
-#contact-form .crayonico {
-	position:absolute;
-	left:15px;
-	top:15px;
-	background-image:url("../images/crayon.png");
-	background-repeat:no-repeat;
-	width:23px;
-	height:23px;
-}
-#contact-form .emailico {
-	position:absolute;
-	left:495px;
-	top:15px;
-	background-image:url("../images/email.png");
-	background-repeat:no-repeat;
-	width:22px;
-	height:16px;
-}
 .work, .home, .contact {
 	background:url("../images/bgwork.jpg");
 	background-size:cover;
 }
-@media handheld and (max-width:480px), screen and (max-device-width:480px), screen and (max-width:767px) {
-body {
-	padding:0;
-}
-}
+
 @media handheld and (max-width:479px), screen and (max-device-width:479px), screen and (max-width:479px) {
 #contact-form .text-input {
 	float:left;
+}
 }
 header {
 	border-bottom:none;
@@ -323,7 +264,6 @@ header {
 }
 header .main-nav {
 	width:100%;
-	margin-left:0;
 }
 header .main-nav ul {
 	width:100%;
@@ -340,22 +280,39 @@ header .main-nav ul li a {
 	display:block;
 	margin-bottom:4px;
 }
-div.columns {
-	width:100%;
-}
-div.one-half, div.one-third, div.two-third, div.three-fourth, div.one-fourth {
-	margin-left:0;
-	width:100%;
-}
-div.one-third, div.one-fourth, .copyright {
-	width:95%;
-	float:none;
-	padding:0 0 0 10px;
-}
 .copyright {
 	text-align:center;
 }
 #main-content .text-intro h2 {
 	font-size:30px;
 }
+.col-desc {
+	padding-top: 14px;
+}
+.col-header {
+	font-size: 225%;
+	padding-bottom: 8px;
+}
+
+.col-sm {
+	margin-left: 1%;
+	border-radius: 10px;
+	background-color: #008577;
+	color: Snow;
+}
+
+.content-background {
+	padding: 1%;
+	border-radius: 10px;
+	background-color: #008577;
+	color: Snow;
+	margin-left: 3%;
+}
+
+.above-content-background {
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+.background-link {
+	color: darkblue;
 }
